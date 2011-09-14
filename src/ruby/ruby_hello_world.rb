@@ -1,5 +1,5 @@
 ﻿class RubyHelloWorld
     def sayHi()
-        "Hello World from Ruby!"
+        puts "Hello World from Ruby!"
     end
 end
