@@ -42,3 +42,5 @@ grails.project.dependency.resolution = {
         build ":tomcat:$grailsVersion"
     }
 }
+
+grails.plugin.location.'ruby' = "../grails-ruby"
