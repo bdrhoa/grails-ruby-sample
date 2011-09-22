@@ -1,11 +1,12 @@
-﻿def sayHi(name)
-    time = Time.new
-    day = time.strftime("%A")
-    "Hello #{name}! Today is #{day}."
+﻿class RubyHelloWorld
+    def create_greeting(name, greeting)
+        time = Time.new
+        day = time.strftime("%A")
+        "#{greeting} #{name}! Today is #{day}."
+    end
 end
 
-def sayBye(name)
-    time = Time.new
-    day = time.strftime("%A")
-    "Goodbye #{name}! Today is #{day}."
+def greet(name, greeting)
+    hello_world = RubyHelloWorld.new
+    hello_world.create_greeting(name, greeting)
 end
