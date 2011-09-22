@@ -2,8 +2,13 @@ package grails.ruby.sample
 
 class HomeController {
 
-    def index() { 
-        //def fileReader = new FileReader("ruby_hello_world.rb");
-        render ruby.eval("Math::PI");
+    def hi() { 
+        ruby.put('name', 'Bobby Warner')        
+        render ruby.eval('sayHi($name)')
+    }
+    
+    def bye() {
+        ruby.put('name', 'John Smith')
+        render ruby.eval('sayBye($name)')
     }
 }
