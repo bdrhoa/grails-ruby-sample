@@ -1,1 +1,1 @@
-﻿puts Math::PI
+﻿Math::PI
